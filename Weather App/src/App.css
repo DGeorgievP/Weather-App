@@ -1,42 +1,109 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+#main-container {
+  background: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgb(255, 255, 255, 0.2);
+  padding: 20px;
+  height: 900px;
+  width: 600px;
   text-align: center;
+  border: solid;
+  border: none;
+  border-radius: 15px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  width: 90%;
+  height: 3%;
+  background-color: white;
+  border: solid;
+  border: none;
+  border-radius: 15px;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  margin-top: 3%;
+  height: 40px;
+  width: 100px;
+  background: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px transparent;
+  border-radius: 15px;
+  cursor: pointer
+
 }
 
-.card {
-  padding: 2em;
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-color: rgba(255, 255, 255, 0.8); 
+  color: black; 
 }
 
-.read-the-docs {
-  color: #888;
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#main-container {
+  background: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgb(255, 255, 255, 0.2);
+  padding: 20px;
+  height: auto;
+  width: 600px;
+  text-align: center;
+  border: solid;
+  border: none;
+  border-radius: 15px;
+}
+
+h1 {
+  color: white;
+}
+
+input {
+  width: 90%;
+  height: 25px;
+  background-color: white;
+  border: solid;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+button {
+  margin-top: 3%;
+  height: 40px;
+  width: 100px;
+  background: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px transparent;
+  border-radius: 15px;
+  cursor: pointer
+
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-color: rgba(255, 255, 255, 0.8); 
+  color: black; 
+}
+
+#weather-info {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 20px;
+  text-align: center;
 }
