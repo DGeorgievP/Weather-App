@@ -34,18 +34,26 @@ export const Weather = () => {
     <>
       <div id="main-container">
         <h1>Weather App</h1>
+        <div id="search-div">
         <input
           id="input"
           placeholder="City"
           value={city}
           onChange={(e) => setCity(e.target.value)}
         ></input>
-        <div>
           <button id="search" onClick={fetchWeatherData}>Search</button>
         </div>
         {weatherData && (
           <div id="weather-info">
+            <div id="location">
             <h2>{weatherData.address}</h2>
+            <img 
+              src={`/src/assets/${weatherData.currentConditions.icon}.svg`} 
+              alt={weatherData.currentConditions.conditions} 
+              id="weather-icon"
+            />
+            </div>
+            <div id="weather-data">
             <p>
               Temperature: {weatherData.currentConditions.temp}°F Feels like{" "}
               {weatherData.currentConditions.feelslike}°F
@@ -53,6 +61,7 @@ export const Weather = () => {
             <p>Humidity: {weatherData.currentConditions.humidity}%</p>
             <p>Wind Speed: {weatherData.currentConditions.windspeed} km/h</p>
             <p>Weather Condition: {weatherData.currentConditions.conditions}</p>
+            </div>
           </div>
         )}
       </div>
