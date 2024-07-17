@@ -7,9 +7,11 @@ interface WeatherData {
     feelslike: number;
     humidity: number;
     windspeed: number;
+    conditions: string;
     icon: string;
   };
 }
+
 export const Weather = () => {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
@@ -24,28 +26,34 @@ export const Weather = () => {
       const data = await response.json();
       setWeatherData(data);
     } catch {
-      throw new Error("Data not found");
-      
+      alert("City not found");
     }
   };
-  console.log(weatherData)
-
+  
   return (
     <>
-       <div id="main-container">
+      <div id="main-container">
         <h1>Weather App</h1>
-        <input id="input" placeholder="City" value={city} onChange={(e) => setCity(e.target.value)}></input>
+        <input
+          id="input"
+          placeholder="City"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+        ></input>
         <div>
           <button id="search" onClick={fetchWeatherData}>Search</button>
         </div>
         {weatherData && (
-        <div id="weather-info">
+          <div id="weather-info">
             <h2>{weatherData.address}</h2>
-            <p>Temperature: {weatherData.currentConditions.temp}°F Feels like {weatherData.currentConditions.feelslike}°F</p>
+            <p>
+              Temperature: {weatherData.currentConditions.temp}°F Feels like{" "}
+              {weatherData.currentConditions.feelslike}°F
+            </p>
             <p>Humidity: {weatherData.currentConditions.humidity}%</p>
             <p>Wind Speed: {weatherData.currentConditions.windspeed} km/h</p>
-            <p>Weather Condition: {weatherData.currentConditions.icon}</p>
-      </div>
+            <p>Weather Condition: {weatherData.currentConditions.conditions}</p>
+          </div>
         )}
       </div>
     </>
