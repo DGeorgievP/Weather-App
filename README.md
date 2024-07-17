@@ -25,7 +25,7 @@ A simple weather application that allows users to search for current weather con
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/DGeorgievP/Weather-App
 
 2. Install Dependencies
 
