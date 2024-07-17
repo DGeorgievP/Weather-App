@@ -54,12 +54,16 @@ export const Weather = () => {
             />
             </div>
             <div id="weather-data">
+            <hr />
             <p>
               Temperature: {weatherData.currentConditions.temp}°F Feels like{" "}
               {weatherData.currentConditions.feelslike}°F
             </p>
+            <hr />
             <p>Humidity: {weatherData.currentConditions.humidity}%</p>
+            <hr />
             <p>Wind Speed: {weatherData.currentConditions.windspeed} km/h</p>
+            <hr />
             <p>Weather Condition: {weatherData.currentConditions.conditions}</p>
             </div>
           </div>
