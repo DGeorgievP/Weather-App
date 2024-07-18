@@ -3,12 +3,13 @@
   padding: 2rem;
 }
 
+/*--------------------------------------------------------------*/
+
 #main-container {
   background: rgb(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgb(255, 255, 255, 0.2);
   padding: 20px;
-  height: 900px;
   width: 600px;
   text-align: center;
   border: solid;
@@ -16,55 +17,8 @@
   border-radius: 15px;
 }
 
-h1 {
-  color: white;
-}
 
-input {
-  width: 90%;
-  height: 3%;
-  background-color: white;
-  border: solid;
-  border: none;
-  border-radius: 15px;
-  outline: none;
-}
-
-button {
-  margin-top: 3%;
-  height: 40px;
-  width: 100px;
-  background: rgb(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  border: 1px transparent;
-  border-radius: 15px;
-  cursor: pointer
-
-}
-
-button:hover {
-  background-color: rgba(255, 255, 255, 0.8); 
-  border-color: rgba(255, 255, 255, 0.8); 
-  color: black; 
-}
-
-#root {
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-#main-container {
-  background: rgb(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgb(255, 255, 255, 0.2);
-  padding: 20px;
-  height: auto;
-  width: 600px;
-  text-align: center;
-  border: solid;
-  border: none;
-  border-radius: 10px;
-}
+/*--------------------------------------------------------------*/
 
 h1 {
   color: white;
@@ -79,17 +33,16 @@ input {
   border-radius: 10px;
   outline: none;
   margin-right: 15px;
-  cursor: pointer;
 }
 
-button {
+#search-btn {
+  width: 100px;
   height: 38px;
   background: rgb(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   border: 1px transparent;
   border-radius: 10px;
   cursor: pointer
-
 }
 
 button:hover {
@@ -97,6 +50,8 @@ button:hover {
   border-color: rgba(255, 255, 255, 0.8); 
   color: black; 
 }
+
+/*--------------------------------------------------------------*/
 
 #weather-info {
   background: rgba(255, 255, 255, 0.6);
@@ -108,16 +63,81 @@ button:hover {
   text-align: center;
 }
 
+#location {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+
+#favorite-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#favorite-btn::before {
+  content: "\2661"; 
+  font-size: 24px;
+  color: red;
+}
+
 #weather-icon {
   width: 100px;
   height: 100px;
 }
+/*--------------------------------------------------------------*/
 
-#location {
+h3 {
+padding-top: 1rem;
+}
+#favorites hr {
+  width: 95%;
 }
 
-#weather-data {
+#favorites {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
 }
+/*--------------------------------------------------------------*/
+
+#favorites-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+#favorites-list li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+#favorite-item-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+#favorite-item-btn:hover {
+  text-decoration: underline; 
+}
+
+#remove-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  padding-left: 5px;
+}
+
+/*--------------------------------------------------------------*/
 
 @media (max-width: 1024px) {
   #main-container {
