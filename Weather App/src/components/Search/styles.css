@@ -1,0 +1,31 @@
+#search-bar {
+  display: flex;
+}
+
+#search-input {
+  width: 80%;
+  height: 35px;
+  background-color: white;
+  border: solid;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin-right: 15px;
+  padding-left: 15px;
+}
+
+#search-btn {
+  width: 100px;
+  height: 38px;
+  background: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}

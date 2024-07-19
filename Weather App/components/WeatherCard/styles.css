@@ -1,0 +1,57 @@
+#main-container {
+  background: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgb(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 600px;
+  text-align: center;
+  border: solid;
+  border: none;
+  border-radius: 15px;
+}
+  
+h1 {
+  color: white;
+}
+  
+#weather-info {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 20px;
+  text-align: center;
+}
+  
+#location {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+  
+#favorite-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+  
+#favorite-btn::before {
+  content: "\2661"; 
+  font-size: 24px;
+  color: red;
+}
+  
+#weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#error-message {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+}

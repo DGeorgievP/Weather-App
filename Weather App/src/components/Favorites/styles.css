@@ -1,0 +1,67 @@
+h3 {
+  padding-top: 1rem;
+}
+
+#favorites hr {
+  width: 95%;
+}
+
+#favorites {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+#favorites-list {
+  list-style-type: none; 
+  padding: 0;
+}
+
+#favorites-list li {
+  margin-bottom: 10px; 
+}
+
+#favorite-item-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+#favorite-item-btn:hover {
+  text-decoration: underline;
+}
+
+#remove-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  padding-left: 5px;
+}
+
+@media (max-width: 1024px) {
+    #main-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    input {
+      width: 70%;
+    }
+  
+    button {
+      width: 25%;
+      height: 35px;
+    }
+  
+    #weather-icon {
+      width: 40px; 
+      height: 40px; 
+    }
+  }
